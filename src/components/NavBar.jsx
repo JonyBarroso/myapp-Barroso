@@ -2,21 +2,23 @@ import React from "react";
 
 const NavBar = () => {
     return (
+
         <div className="container">
-            <ul className="nav d-flex align-items-center">
-                <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#"><img src="./components/athena.jpg" width="48" alt="Athena.Deco" /></a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link link_header" href="#">Nosotros</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link link_header" href="#">Tienda</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link link_header" href="#">Contacto</a>
-                </li>
-            </ul>
+            <nav>
+                <ul  className= "menu-horizontal">
+                    <li><a href="">Inicio</a></li>
+                    <li>
+                        <a href="">Modelos</a>
+                            <ul  className= "menu-vertical">
+                                <li><a href="">Mate Geometrico</a></li>
+                                <li><a href="">Mate Perita</a></li>
+                                <li><a href="">Cazuelas</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     )
 }
